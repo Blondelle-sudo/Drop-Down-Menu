@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-image: url("img/salon.jpg");
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: rgb(2, 100, 2);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-bar ul li{
+    width: 110px;
+    padding: 10px;
+    margin: 10px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+.active, .menu-bar ul li:hover{
+    background: #2bab0d;
+    border-radius: 3px;
+
+}
+.menu-bar .fa{
+    margin-right: 6px;
+
+}
+.subMenu-bar{
+    display: none;
+}
+.menu-bar ul li:hover .subMenu-bar{
+    display: block;
+    position: absolute;
+    background:rgb(2, 100, 2);
+    margin-top: 15px;
+    margin-left: -15px;
+  
+}
+.menu-bar ul li:hover .subMenu-bar ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .subMenu-bar ul li{
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+.menu-bar ul li:hover .subMenu-bar ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .subMenu-bar ul li a:hover{
+    color:yellow;
+}
+.fa-angle-right{
+    float: right;
+}
+.subMenu-bar2{
+    display: none;
+}
+.hover-me:hover .subMenu-bar2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(2, 100, 2);
+}
